@@ -3,15 +3,17 @@ public class ninja {
     protected String clan;
     protected boolean biju;
 
-    public ninja (String nome , String clan, boolean biju){
+    public ninja (String nome ,String clan, boolean biju){
         this.nome = nome;
+        this.clan = clan;
         this.biju = biju;
     }
 
-    public String setNome(){
-        return nome;
+    public void gatNomeandClan(){
+        System.out.println("o nome é: "+ nome +" " + clan );
     }
-    public String setBiju(){
-        return nome;
+
+    public void chacra(){
+        System.out.println("tem chacra");
     }
 }

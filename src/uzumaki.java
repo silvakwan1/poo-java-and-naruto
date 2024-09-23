@@ -1,7 +1,7 @@
 public class uzumaki extends ninja{
    
     public uzumaki (String nome , String clan, boolean biju){
-       super(nome, clan);
+       super(nome, clan, biju);
     }
 
     public void chacra(){
@@ -9,6 +9,7 @@ public class uzumaki extends ninja{
     }
     
     public void chacra(int quantidade){
+        
         if (quantidade >= 5) {
             System.out.println("rasengan gigante");
         }else if (quantidade >= 2) {
@@ -19,7 +20,7 @@ public class uzumaki extends ninja{
                 System.out.println("tá na hora de usar a biju");
                 
             }else{
-                System.out.println("não consegue usar nenhum jutso");
+                System.out.println("não consegue usar nenhum");
                 
             }
         }
